@@ -1,16 +1,13 @@
 {% extends 'main.html' %}
+
 {% load static %}
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/home.css' %}?{% now "U" %}"">
 
-<div class="container-fluid">
-	<div class="introduction">
-		<h1>Hello, I am Ryan Angelo!</h1>
-		<p>( This website is currently in progress. Stay tune! )</p>
-	</div>
-
+<div class="home-fluid container-fluid">
+	{% include 'home/hero.html'%}
+	{% include 'home/iam.html'%}
 </div>
-
 
 {% endblock content %}

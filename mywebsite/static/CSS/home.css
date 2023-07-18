@@ -1,19 +1,36 @@
-.container-fluid {
+* {
+	background: #070217;
+}
+.home-fluid {
+	font-family: 'Rubik';
+	color: white;
+}
+
+.hero_row {
 	display: flex;
-	height: 100vh;
 	justify-content: center;
 	align-items: center;
+	min-height: 70vh !important;
+	margin: 0rem 5rem 2.5rem 5rem;
 }
 
-.introduction {
-	font-family: 'Montserrat';
-	text-align: left;
+.btn-hero {
+	background: #FFFFFF;
+	color: black;
 }
 
-.introduction > h1 {
-	padding-bottom: 0rem;
+.btn-hero:hover {
+	background: #070217;
+	border: solid #FFFFFF 1px;
+	color: #FFFFFF;
 }
 
-.introduction > p {
-	padding-top: 0rem;
+.iam_top_row {
+	margin: 0rem 5rem 0rem 5rem;
+}
+.iam_row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0rem 5rem 2.5rem 5rem
 }
