@@ -1,0 +1,32 @@
+.navbar {
+	padding: 0rem 10rem 0rem 10rem;
+}
+
+.navbar-brand {
+	font-size: 32px;
+	font-family: 'Figtree';
+	color: #432616;
+	font-weight: bold;
+}
+
+.navbar-brand:hover {
+	color: #432616;
+	
+}
+
+.navbar-collapse > ul {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav-link {
+	font-size: 18px;
+	font-family: 'Figtree';
+	color: #ffffff;
+}
+
+.nav-link:hover {
+	transition: .1s;
+	color: #432616;
+	border-bottom: 2px solid #432616;
+}

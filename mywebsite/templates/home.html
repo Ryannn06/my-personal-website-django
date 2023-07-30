@@ -4,10 +4,10 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/home.css' %}?{% now "U" %}"">
+{% include 'navbar.html' %}
 
-<div class="home-fluid container-fluid">
+<div class="container-fluid hero-fluid">
 	{% include 'home/hero.html'%}
-	{% include 'home/iam.html'%}
 </div>
 
 {% endblock content %}
