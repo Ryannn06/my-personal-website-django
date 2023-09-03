@@ -1,9 +1,14 @@
 {% load static %}
-<div class="container-fluid hero-fluid">
+<div class="hero-fluid">
 	<div class="row hero-content-row">
 		<div class="col-lg-12">
+			{% if personal_info %}
 			<h1>Hi. I am {{personal_info.first_name}}.
 			A web developer and programmer</h1>
+			{% else %}
+			<h1>Hi. I am Ryan.
+			A web developer and programmer</h1>
+			{% endif %}
 			<p class="text-mute mt-3">It's nice to meet you here at my personal website</p>
 		</div>
 		<div class="col-lg-12 mt-5">

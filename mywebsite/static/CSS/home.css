@@ -97,14 +97,14 @@
 	color: #83a1cd;
 }
 
-input {
-	background: none;
-}
-
 @media (max-width: 768px) {
 	.hero_row {
 		position: -webkit-relative; /* Safari */
 		position: relative;
 		top: none;
+	}
+
+	.hero-fluid, .aboutme-fluid, .skills-fluid, .projects-fluid , .education-fluid, .contactme-fluid, .footer-fluid {
+		padding: 2.5rem;
 	}
 }

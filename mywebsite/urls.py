@@ -8,7 +8,6 @@ from . import views
 
 urlpatterns = [
 	path('account/', include('django.contrib.auth.urls')),
-
 	path('', views.index, name="home"),
 	path('myprojects/', views.my_projects, name="my_projects"),
 	path('create_project/', views.create_project, name="create_project"),
