@@ -57,6 +57,10 @@ h3 {
 	font-size: 1.5rem;
 }
 
+.text-var {
+	color: #8395c1;
+}
+
 h4, .p-var {
 	font-size: 1.1rem;
 }
@@ -94,7 +98,7 @@ p, input, label, a, li {
 }
 
 .text-mute {
-	color: #cecece;
+	color: #A9A9A9;
 }
 
 .text-unmute {

@@ -105,6 +105,6 @@
 	}
 
 	.hero-fluid, .aboutme-fluid, .skills-fluid, .projects-fluid , .education-fluid, .contactme-fluid, .footer-fluid {
-		padding: 2.5rem;
+		padding: 2.5rem 1.5rem 2.5rem 1.5rem;
 	}
 }
