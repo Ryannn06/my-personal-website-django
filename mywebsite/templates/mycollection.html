@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/myprojects.css' %}?{% now "U" %}"">
+
+<div class="projects-fluid container-fluid">
+	{% include 'myprojects/projects.html' %}
+</div>
+
+{% endblock content %}

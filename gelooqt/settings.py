@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
+    'mywebsite',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +80,18 @@ WSGI_APPLICATION = 'gelooqt.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mywebsite',
+        #'NAME': 'technorepository$default',
+        'USER':'root',
+        #'USER':'technorepository',
+        'PASSWORD':'',
+        'HOST':'localhost',
+        #'HOST':'technorepository.mysql.pythonanywhere-services.com',
+        'PORT': '',
+        #'OPTIONS': {
+        # "init_command": "SET foreign_key_checks = 0;",
+    #},
     }
 }
 
@@ -101,6 +113,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = 'mywebsite.account_credentials'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 # Internationalization
@@ -130,3 +146,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGOUT_REDIRECT_URL = '/'

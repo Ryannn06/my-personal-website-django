@@ -4,10 +4,22 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/home.css' %}?{% now "U" %}"">
-{% include 'navbar.html' %}
-
-<div class="container-fluid hero-fluid">
-	{% include 'home/hero.html'%}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-lg-5 hero_row cards">
+            <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top"> 
+            	{% include 'home/hero.html'%}
+            </div>
+        </div>
+        <div class="col-md-7 col-lg-7 content-row p-3 min-vh-100">
+			{% include 'home/aboutme.html'%}
+			{% include 'home/education.html'%}
+			{% include 'home/skills.html'%}
+			{% include 'home/myprojects.html'%}
+			{% include 'home/contacts.html'%}
+            {% include 'footer.html'%}
+        </div>
+    </div>
 </div>
 
 {% endblock content %}

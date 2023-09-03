@@ -1,0 +1,24 @@
+.login-fluid{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginhero-leftcol {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: #F4ECE5;
+}
+
+.loginhero-rightcol {
+
+}

@@ -1,0 +1,27 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<div class="row login-row m-5">
+	<div class="col-lg-6 loginhero-rightcol p-5">
+		<div class="mb-5">
+			<a href="/"><i class="bi bi-arrow-left-circle fs-1"></i></a>
+		</div>
+		<div>
+			<h2>signin here</h2>
+			<p>We may just be a chapter of their life.</p>
+			<form method="POST">
+				{% csrf_token %}
+				{{form|crispy}}
+			 	<div  class="form-group loginform">
+			 	 	<a href="/password_reset">Forgot password?</a>
+			 	</div>
+				<div  class="form-group loginform  mt-3">
+				 	<a><button type="submit" class="btn btn-hm">Login <i class="bi bi-arrow-right ps-2 fs-4"></i></button></a>
+				</div>			
+			</form> 
+		</div>
+	</div>
+	<div class="col-lg-6 loginhero-leftcol">
+		<img class="img-fluid" src="{% static 'Images/DrawkitEcology-6.png'%}" alt="background-2">
+	</div>
+</div>

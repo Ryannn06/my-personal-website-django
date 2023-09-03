@@ -1,0 +1,18 @@
+.projects-fluid {
+	padding: 1rem 10rem 2.5rem 10rem;
+}
+
+.row-container {
+	display: flex;
+}
+
+.right-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: justify;
+}
+
+.searchbar {
+	display: flex;
+}

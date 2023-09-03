@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/myprojects.css' %}?{% now "U" %}"">
+
+{% include 'navbar.html'%}
+
+<div class="projects-fluid container-fluid">
+	{% include 'myprojects/createpro.html' %}
+</div>
+
+{% endblock content %}
